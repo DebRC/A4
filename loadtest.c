@@ -4,22 +4,20 @@
 
 #define ARRAY_SIZE 1024
 #define UPDATE_GAP 512
+#define FREQUENCY 1
 
 int main() {
-    // Create an array of 500 elements
-    int array[ARRAY_SIZE];
-    int index = 512;
-
-    // Infinite loop for updating array elements
-    while (1) {
-        // Update array elements with a gap of 100 elements in each iteration
-        array[index] = index+UPDATE_GAP;
+	int count=0;
+	int *array = (int *)malloc(ARRAY_SIZE * sizeof(int));
+	int index = 512;
+	while (1) {
+	array[index] = index+UPDATE_GAP;
 	index = (index + UPDATE_GAP) % ARRAY_SIZE;
+	if(count==FREQUENCY){
+		sleep(1);
+	}
+	}
 
-        // Sleep for a short duration (e.g., 1 second) before the next iteration
-        // sleep(1);
-    }
-
-    return 0;
+	return 0;
 }
 

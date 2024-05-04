@@ -8,7 +8,7 @@ while true; do
     if [ "$output" != "running" ]; then
         # If output is not "running", print the current time
         current_time=$(date +"%s%3N")
-        echo "Pre-Running Stop: $current_time"
+        echo "VM Stopped At: $current_time"
         exit 1
     fi
 done

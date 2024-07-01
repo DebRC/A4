@@ -1,7 +1,5 @@
 # Performance-Analysis-of-Live-Migration-using-KVM
-This project evaluates live migration in virtualized environments using QEMU-KVM. Analysis includes monitoring downtime, service availability, and resource utilization. 
-
-The project also analyzes efficiency gains and benefits in fault tolerance, resource optimization, and energy efficiency, and provides insights for optimizing virtualized environments.
+This project analyse the performance of live migration with pre-copy technique in virtualized environments using QEMU-KVM. Analysis includes monitoring downtime, service availability, and resource utilization.
 
 ## Project Structure
 * `lib` folder contains the entire code used for the analysis and evaluation.
